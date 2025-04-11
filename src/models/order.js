@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import Counter from "./counter";
 
 const orderSchema = new mongoose.Schema({
   orderId: {
@@ -57,7 +56,7 @@ const orderSchema = new mongoose.Schema({
     },
     address: { type: String },
   },
-  deliveryPartnerLocation: {
+  deliveryPersonLocation: {
     latitude: {
       type: Number,
       required: true,
